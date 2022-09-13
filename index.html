@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC</title>
+    <style>
+        body {
+            background-color: grey;
+            color: pink;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        div {
+            font-size: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="curr">
+    </div>
+    <script type="text/javascript">
+        let exchangeRateBitcoin = prompt('What is Bitcoin price today?')
+        let sumUSD = prompt('How much $ do you have?')
+        let result = `You can buy ${sumUSD/exchangeRateBitcoin} BTC`
+        document.getElementById('curr').innerHTML = result
+    </script>
+</body>
+</html>
